@@ -144,15 +144,12 @@ class Field {
 Setup
 1. เตรียมโฟลเดอร์โปรเจกต์ → npm init -y → npm install prompt-sync
 2. เตรียม Git repo → git init → git push
-
 Import & Constants
 3. require('prompt-sync') และส่ง option { sigint: true } เพื่อให้กด Ctrl+C ได้
 4. ประกาศ const สำหรับสัญลักษณ์ 4 ตัว: hat ⛑️ / hole ⛳︎ / ground ✻ / player ☝️
-
 Class Design
 5. สร้าง class Field พร้อม constructor เก็บ field, areaY, areaX
 6. กำหนด map ขนาด 4×4 (array 2 มิติ)
-
 Game Loop (method play)
 7. ใช้ while(true) วน loop จนกว่าจะ break
 8. แต่ละรอบ:
