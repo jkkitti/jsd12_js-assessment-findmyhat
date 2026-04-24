@@ -141,7 +141,6 @@ class Field {
 
 ## บันทึกกระบวนการคิด (สร้าง)
 
-Setup
 1. เตรียมโฟลเดอร์โปรเจกต์ → npm init -y → npm install prompt-sync
 2. เตรียม Git repo → git init → git push
 Import & Constants
@@ -150,13 +149,12 @@ Import & Constants
 Class Design
 5. สร้าง class Field พร้อม constructor เก็บ field, areaY, areaX
 6. กำหนด map ขนาด 4×4 (array 2 มิติ)
-Game Loop (method play)
 7. ใช้ while(true) วน loop จนกว่าจะ break
 8. แต่ละรอบ:
-   a. console.clear() + แสดงแผนที่
-   b. ลบ player ที่ตำแหน่งเดิม (set เป็น ground)
-   c. รับ input w/a/s/d จาก prompt
-   d. ขยับพิกัด areaY / areaX ตามทิศที่กด
+   - a. console.clear() + แสดงแผนที่
+   - b. ลบ player ที่ตำแหน่งเดิม (set เป็น ground)
+   - c. รับ input w/a/s/d จาก prompt
+   - d. ขยับพิกัด areaY / areaX ตามทิศที่กด
 9. ตรวจเงื่อนไขจบเกมด้วย if (ไม่ใช่ฟังก์ชันแยก):
    - ออกนอกแผนที่ → break
    - ตกหลุม → break
